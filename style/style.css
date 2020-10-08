@@ -6,12 +6,21 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
+ul,li{
+  list-style-type: none;
+  padding: 0;
+  margin:0;
+}
 a{
   text-decoration: none;
   color: white;
 }
 nav {
   height: 90px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+.bendera{
+  filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.25));
 }
 .fullscreen{
   height: 115vh;
@@ -126,7 +135,7 @@ width: 65%;
 }
 
 .company-achive-section{
-  background: linear-gradient(273.19deg, #010E1A 64.34%, rgba(1, 14, 26, 0) 107.06%), url('../assets/images/bg-comp-structure.jpg');
+  background: linear-gradient(273.19deg, #010E1A 64.34%, rgba(1, 14, 26, 0) 107.06%), url('../assets/images/Rectangle\ 43.png');
   background-position-y: 60%;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -139,7 +148,16 @@ border: 1px solid white;
 }
 .btn-services{
   border: 1px solid #FFFFFF;
-border-radius: 3px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  width: 170px;
+  height:50px;
+  color : white;
+  background: inherit;
+}
+.services-section{
+  height: 270vh;
+  background: #00335E;
 }
 .our-app-section{
   background: linear-gradient(84.28deg, #FFFFFF 53.9%, rgba(1, 14, 26, 0) 109.69%), url(.jpg);
@@ -147,7 +165,7 @@ border-radius: 3px;
 .client-response{
   background: linear-gradient(0deg, rgba(232, 235, 239, 0.95), rgba(232, 235, 239, 0.95)), url('../assets/images/bg-comp-structure.jpg'), #E8EBEF;
   background-size: 100% 1000px;
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
 }
 .email-input{
@@ -161,13 +179,116 @@ border-radius: 2px;
 width: 183px;
 height: 65px;
 }
+.our-app-section{
+  background-image: url('../assets/images/Rectangle\ 42.png');
+  background-size: 100% 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .contact-section{
   background: #010E1A;
 }
+.contact>ul>li{
+  margin: 0 0 25px -15px;
+}
+.contact>ul>li>a{
+  padding: 0 15px;
+  text-decoration: none;
+}
+.contact>ul>li :hover {
+  padding-bottom: 10px;
+  border-bottom: 3px solid rgb(20, 7, 138);
+}
+.list-gallery>ul>li{
+  padding: 0 15px;
+}
+.list-gallery>ul>li:hover{
+  cursor: pointer;
+  color: #2875B6;
+  border-bottom: 3px solid #2875B6;
+}
+
 footer{
   background: #010E1A;
 }
 
+/* Achivement page */
+.achivement-section-page{
+  height: 150vh;
+}
+.card-achviment{
+  width: 385px;
+height: 309px;
+}
+.organization-section-page{
+  height: 110vh;
+}
+.last-update-organization{
+  position: absolute;
+  bottom: -150px;
+  left:100px;
+}
+.career-section-page{
+  height: 110vh;
+}
+.position-avaliable{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.apply-btn{
+  width: 183px;
+height: 46px;
+background: #2875B6;
+border-radius: 2px;
+}
+
+.searching-bar{
+  width: 58%;
+}
+.categories{
+  width: 183px;
+height: 65px;
+background: #F6F6F6;
+border-radius: 5px;
+}
+.searching-box{
+  position: relative;
+  width: 793px;
+height: 65px;
+background: #F7F7F7;
+border-radius: 5px;
+}
+.searching-box>input{
+  position:absolute;
+  bottom: 0;
+  height: 100%;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+.search-logo{
+  position: absolute;
+  right:35px ;
+  top: 23px;
+}
+
+.prev-next{
+  width: 140px;
+  position: absolute;
+  top: 148vh;
+  left: 45%;
+}
+.prev-next>.prev , .prev-next>.next{
+  width: 60px;
+height: 60px;
+  border: 2px solid #000;
+}
+.icon-prev,.icon-next{
+  position: relative;
+  top: 16px;
+  left: 22px;
+}
 
 @media only screen and (max-width: 740px) {
 
