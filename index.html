@@ -8,64 +8,66 @@
   <script src="https://kit.fontawesome.com/9e924fc2c1.js" crossorigin="anonymous"></script>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />z
   <link rel="stylesheet" href="./style/style.css" />
-
+  <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
   <title>Hello, world!</title>
 </head>
 
 <body>
-  <nav>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light px-5 fixed-top">
-      <a class="navbar-brand" href="#"><img src="./assets/images/path4496 1.png" alt=""></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item mx-4 dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              SERVICES
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Product catalog</a>
-              <a class="dropdown-item" href="#">Industrial Services</a>
-            </div>
-          </li>
-          <li class="nav-item mx-4 active">
-            <a class="nav-link" href="#">GALLERY</a>
-          </li>
-          <li class="nav-item mx-4">
-            <a class="nav-link" href="#">BLOG</a>
-          </li>
-          <li class="nav-item mx-4">
-            <a class="nav-link" href="#">FAQ</a>
-          </li>
-          <li class="nav-item mx-4 bendera">
-            <a class="nav-link"><img src="./assets/images/icon_bahasa.png" class="w-50" alt=""></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light px-5 fixed-top">
+    <a class="navbar-brand" href="#"><img src="./assets/images/path4496 1.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item mx-4 dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            SERVICES
+          </a>
+          <div class="dropdown-menu p-0 border-0" style="margin-left:-30px;border-radius:1px;margin-top: 2.35vh;"
+            aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item p-3" href="#">Product catalog</a>
+            <a class="dropdown-item p-3" href="#">Industrial Services</a>
+          </div>
+        </li>
+        <li class="nav-item mx-4 active">
+          <a class="nav-link" href="#">GALLERY</a>
+        </li>
+        <li class="nav-item mx-4">
+          <a class="nav-link" href="#">BLOG</a>
+        </li>
+        <li class="nav-item mx-4">
+          <a class="nav-link" href="#">FAQ</a>
+        </li>
+        <li class="nav-item mx-4 bendera">
+          <a class="nav-link"><img src="./assets/images/icon_bahasa.png" class="w-50" alt=""></a>
+        </li>
+      </ul>
+    </div>
   </nav>
   <!-- first jumbotron -->
   <div class="jumbotron jumbotron-fluid header fullscreen" style="margin-bottom: 0">
-    <div class="header-content d-flex">
+    <div class="header-content header-hidden d-flex">
       <div class="highlight align-self-center justify-content-center h-75" style="color: white">
-        <h5 class="font-weight-light">PROFESSIONAL SERVICE</h5>
-        <h1>
+        <h5 class="font-weight-light hidden-text">PROFESSIONAL SERVICE</h5>
+        <h1 class="hidden-text">
           Fastes Service For <br />
           Customers Order
         </h1>
-        <p class="font-weight-light">
+        <p class="font-weight-light hidden-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
           nihil fugit est accusamus unde beatae vitae iusto nisi sapiente
           reiciendis quia. Porro vel culpa quo dolore. Corrupti cumque vero
           possimus.
         </p>
-        <a href="" class="link-header-carousel">Order For Your Bussiness <i class="ml-3 fas fa-arrow-right"></i></a>
+        <div class="warper hidden-text">
+          <a href="" class="link-header-carousel">Order For Your Bussiness <i class="ml-3 fas fa-arrow-right"></i></a>
+        </div>
         <span class="rectangle"></span>
       </div>
     </div>
@@ -83,11 +85,13 @@
         <hr>
       </div>
       <div class="row text-center h-75">
-        <div class="col-sm-12 col-md-6 align-self-center ">
-          <h2><strong>We always prioritize the best service for our customers.</strong></h2>
+        <div class="col-sm-12 col-md-6 align-self-center hidden-about">
+          <h2><strong id=" ">We always prioritize the best service for our customers.</strong></h2>
         </div>
-        <div class="col-sm-12 col-md-6 align-self-center about-sha">
-          <p>Introduce us PT. SHA SOLO which is officially appointed by PT. PERTAMINA as an Industrial Fuel Agent
+        <div class="col-sm-12 col-md-6 align-self-center about-sha hidden-about">
+          <p>Introduce us PT. SHA SOLO which is officially appointed by PT. PERTAMINA as
+            an
+            Industrial Fuel Agent
             serving and selling HSD BIO SOLAR PT. PERTAMINA.</p>
         </div>
       </div>
@@ -96,9 +100,10 @@
   <div class="row visi-misi" style="height:70vh;margin: 0;color: white;">
     <div class="col-sm-12 col-md-6" style="background: #010E1A;">
       <div class="content-misi text-center d-flex h-100 align-self-center flex-column justify-content-center">
-        <h1 class="mb-5">VISI</h1>
-        <h3>Become a reliable company</h3>
-        <p class="w-50 mx-auto">Membangun PT. SHA SOLO sebagai perusahan bahan bakar minyak yang handal,
+        <h1 class="mb-5 hidden-misi">VISI</h1>
+        <h3 class="hidden-misi">Become a reliable company</h3>
+        <p class="w-50 mx-auto hidden-misi mt-4">Membangun PT. SHA SOLO sebagai perusahan bahan bakar minyak yang
+          handal,
           terpercaya dan terdepan
           bagi seluruh
           mitra usaha di Indonesia</p>
@@ -106,14 +111,15 @@
     </div>
     <div class="col-sm-12 col-md-6" id="misi">
       <div class="content-visi d-flex h-100 w-75 mx-auto align-self-center flex-column justify-content-center">
-        <h1 class="mb-5 mt-4 text-center">MISSION</h1>
-        <p>Melayani kebutuhan bahan bakar minyak untuk <br> Industri di Indonesia.</p> <br>
-        <p>Membantu dan mendukung mitra usaha/ Industri dalam hal pelayanan distribusi Bahan Bakar Minyak.
+        <h1 class="mb-5 mt-4 text-center hidden-misi">MISSION</h1>
+        <p class="hidden-misi">Melayani kebutuhan bahan bakar minyak untuk <br> Industri di Indonesia.</p> <br>
+        <p class="hidden-misi">Membantu dan mendukung mitra usaha/ Industri dalam hal pelayanan distribusi Bahan Bakar
+          Minyak.
         </p>
       </div>
     </div>
   </div>
-  <div class="jumbotron jumbotron-fluid d-flex flex-column"
+  <div class="jumbotron jumbotron-fluid d-flex flex-column benefit-section"
     style="height:100vh; margin-bottom: 0; background: #E8EBEF;">
     <div class="container-fluid h-100 ">
       <div class="heading text-center mx-auto my-5">
@@ -122,7 +128,7 @@
         <hr>
       </div>
       <div class="row mt-5 pt-2 justify-content-center align-self-center">
-        <div class="col-4 col-sm-4 col-md-3 mx-3 my-3 benefit-box">
+        <div class="col-4 col-sm-4 col-md-3 mx-3 my-3 benefit-box hidden-box">
           <div class="icon">
             <i class="fas fa-flag fa-3x"></i>
           </div>
@@ -131,7 +137,7 @@
             <p>Mengutamakan penjualan produk <br> dalam negeri dan tenaga lokal </p>
           </div>
         </div>
-        <div class="col-4 col-sm-4 col-md-3 mx-3 my-3 benefit-box">
+        <div class="col-4 col-sm-4 col-md-3 mx-3 my-3 benefit-box hidden-box">
           <div class="icon">
             <i class="fas fa-briefcase fa-3x"></i>
           </div>
@@ -140,7 +146,7 @@
             <p>Menggunakan tenaga yang <br> profesional </p>
           </div>
         </div>
-        <div class="col-4 col-sm-4 col-md-3 mx-3 my-3 benefit-box">
+        <div class="col-4 col-sm-4 col-md-3 mx-3 my-3 benefit-box hidden-box">
           <div class="icon">
             <i class="fas fa-eye fa-3x"></i>
           </div>
@@ -149,7 +155,7 @@
             <p>Memberikan informasi yang jelas <br> dan terbuka </p>
           </div>
         </div>
-        <div class="col-4 col-sm-4 col-md-3 mx-3 my-3 benefit-box">
+        <div class="col-4 col-sm-4 col-md-3 mx-3 my-3 benefit-box hidden-box">
           <div class="icon">
             <i class="fas fa-user-friends fa-3x"></i>
           </div>
@@ -158,7 +164,7 @@
             <p>Kemajuan Perusahaan yang <br> berkesinambungan </p>
           </div>
         </div>
-        <div class="col-4 col-sm-4 col-md-3 mx-3 my-3 benefit-box">
+        <div class="col-4 col-sm-4 col-md-3 mx-3 my-3 benefit-box hidden-box">
           <div class="icon">
             <i class="fas fa-heart fa-3x"></i>
           </div>
@@ -167,7 +173,7 @@
             <p>Melayani pelanggan dengan <br> komitmen menjaga kualitas</p>
           </div>
         </div>
-        <div class="col-4 col-sm-4 col-md-3 mx-3 my-3 benefit-box">
+        <div class="col-4 col-sm-4 col-md-3 mx-3 my-3 benefit-box hidden-box">
           <div class="icon">
             <i class="fas fa-wrench fa-3x fa-rotate-270"></i>
           </div>
@@ -183,19 +189,21 @@
   <!-- company structur -->
   <div class="jumbotron jumbotron-fluid company-structure-section" style="height: 60vh;margin-bottom: 0;">
     <div class="container text-white w-50 " style="margin-left: 10%;">
-      <h1 class="mt -5">COMPANY STRUCTURE</h1>
-      <p class="my-5">Membangun PT. SHA SOLO sebagai perusahan bahan bakar <br> minyak yang handal, terpercaya dan
+      <h1 class="mt -5 hidden-structure">COMPANY STRUCTURE</h1>
+      <p class="my-5 hidden-structure">Membangun PT. SHA SOLO sebagai perusahan bahan bakar <br> minyak yang handal,
+        terpercaya dan
         terdepan bagi seluruh mitra <br> usaha di Indonesia.</p>
-      <button class="button-structure-achiv text-white">View Structure Organization</button>
+      <button class="button-structure-achiv text-white hidden-structure">View Structure Organization</button>
     </div>
   </div>
   <!-- company achivment -->
   <div class="jumbotron jumbotron-fluid company-achive-section" style="height: 60vh;margin-bottom: 0;">
     <div class="container text-white w-50 text-right" style="margin-right: 10%;">
-      <h1 class="mt -5">COMPANY ACHIEVEMENTS</h1>
-      <p class="my-5">Membangun PT. SHA SOLO sebagai perusahan bahan bakar <br> minyak yang handal, terpercaya dan
+      <h1 class="mt -5 hidden-achive">COMPANY ACHIEVEMENTS</h1>
+      <p class="my-5 hidden-achive">Membangun PT. SHA SOLO sebagai perusahan bahan bakar <br> minyak yang handal,
+        terpercaya dan
         terdepan bagi seluruh mitra <br> usaha di Indonesia.</p>
-      <button class="button-structure-achiv text-white">View Company Achivments</button>
+      <button class="button-structure-achiv text-white hidden-achive">View Company Achivments</button>
     </div>
   </div>
   <section class="services-section">
@@ -209,49 +217,55 @@
       <div class="row h-25 align-items-center">
         <div class="col-6 col-sm-6 col-md-6">
           <div class="content-services w-75 pl-5 mx-auto">
-            <h6>BBM INDUSTRY AGENT</h6>
-            <h2>We Sell Directly
+            <h6 class="hidden-services1">BBM INDUSTRY AGENT</h6>
+            <h2 class="hidden-services1">We Sell Directly
               To Our Customers</h2>
-            <p>The fuel that we sell is the result of direct production from PT. First, serve the purchase of industrial
+            <p class="hidden-services1">The fuel that we sell is the result of direct production from PT. First, serve
+              the purchase of industrial
               fuel for the areas of DKI Jakarta, Banten, West Java, Central Java, Yogyakarta, East Java, and Madura ...
             </p>
-            <button class="btn-services">LEARN MORE</button>
+            <button class="btn-services hidden-services1">LEARN MORE</button>
           </div>
         </div>
         <div class="col-6 col-sm-6 col-md-6">
-          <img src="./assets/images/card-service/1.png" class="d-block mx-auto" style="width: 500px;" alt="">
+          <img src="./assets/images/card-service/1.png" class="d-block mx-auto hidden-services1" style="width: 500px;"
+            alt="">
         </div>
       </div>
-      <div class="row h-25 align-items-center d-flex flex-row-reverse">
+      <div class="row h-25 align-items-center d-flex flex-row-reverse services-2">
         <div class="col-6 col-sm-6 col-md-6">
           <div class="content-services w-75 pl-5 mx-auto">
-            <h6>BBM TRANSPORTATION</h6>
-            <h2>Delivery Quickly To
+            <h6 class="hidden-services2">BBM TRANSPORTATION</h6>
+            <h2 class="hidden-services2">Delivery Quickly To
               The Destination</h2>
-            <p>The fuel that we sell is the result of direct production from PT. First, serve the purchase of industrial
+            <p class="hidden-services2">The fuel that we sell is the result of direct production from PT. First, serve
+              the purchase of industrial
               fuel for the areas of DKI Jakarta, Banten, West Java, Central Java, Yogyakarta, East Java, and Madura ...
             </p>
-            <button class="btn-services">LEARN MORE</button>
+            <button class="btn-services hidden-services2">LEARN MORE</button>
           </div>
         </div>
         <div class="col-6 col-sm-6 col-md-6">
-          <img src="./assets/images/card-service/2.png" class="d-block mx-auto" style="width: 500px;" alt="">
+          <img src="./assets/images/card-service/2.png" class="d-block mx-auto hidden-services2" style="width: 500px;"
+            alt="">
         </div>
       </div>
-      <div class="row h-25 align-items-center">
+      <div class="row h-25 align-items-center services-3">
         <div class="col-6 col-sm-6 col-md-6">
           <div class="content-services w-75 pl-5 mx-auto">
-            <h6>BUNGKER SERVICE</h6>
-            <h2>We Are Filling
+            <h6 class="hidden-services3">BUNGKER SERVICE</h6>
+            <h2 class="hidden-services3">We Are Filling
               The Ship's Bunker</h2>
-            <p>The fuel that we sell is the result of direct production from PT. First, serve the purchase of industrial
+            <p class="hidden-services3">The fuel that we sell is the result of direct production from PT. First, serve
+              the purchase of industrial
               fuel for the areas of DKI Jakarta, Banten, West Java, Central Java, Yogyakarta, East Java, and Madura ...
             </p>
-            <button class="btn-services">LEARN MORE</button>
+            <button class="btn-services hidden-services3">LEARN MORE</button>
           </div>
         </div>
         <div class="col-6 col-sm-6 col-md-6">
-          <img src="./assets/images/card-service/3.png" class="d-block mx-auto" style="width: 500px;" alt="">
+          <img src="./assets/images/card-service/3.png" class="d-block mx-auto hidden-services3" style="width: 500px;"
+            alt="">
         </div>
       </div>
     </div>
@@ -266,25 +280,25 @@
     </div>
     <div class="row container  h-50 justify-content-center align-items-center mx-auto ">
       <div class="col-6 col-sm-6 col-md-3 align-item-center text-center">
-        <img src="./assets/images/logo perusahaan/1.png" style="width: 37%;" alt="">
+        <img src="./assets/images/logo perusahaan/1.png" class="hidden-client" style="width: 37%;" alt="">
       </div>
       <div class="col-6 col-sm-6 col-md-3 align-item-center text-center">
-        <img src="./assets/images/logo perusahaan/2.png" style="width: 37%;" alt="">
+        <img src="./assets/images/logo perusahaan/2.png" class="hidden-client" style="width: 37%;" alt="">
       </div>
       <div class="col-6 col-sm-6 col-md-3 align-item-center text-center">
-        <img src="./assets/images/logo perusahaan/3.png" style="width: 37%;" alt="">
+        <img src="./assets/images/logo perusahaan/3.png" class="hidden-client" style="width: 37%;" alt="">
       </div>
       <div class="col-6 col-sm-6 col-md-3 align-item-center text-center">
-        <img src="./assets/images/logo perusahaan/4.png" style="width: 37%;" alt="">
+        <img src="./assets/images/logo perusahaan/4.png" class="hidden-client" style="width: 37%;" alt="">
       </div>
       <div class="col-6 col-sm-6 col-md-3 align-item-center text-center">
-        <img src="./assets/images/logo perusahaan/5.png" style="width: 37%;" alt="">
+        <img src="./assets/images/logo perusahaan/5.png" class="hidden-client" style="width: 37%;" alt="">
       </div>
       <div class="col-6 col-sm-6 col-md-3 align-item-center text-center">
-        <img src="./assets/images/logo perusahaan/" alt="">
+        <img src="./assets/images/logo perusahaan/3.png" class="hidden-client" style="width: 37%;" alt="">
       </div>
       <div class="col-6 col-sm-6 col-md-3 align-item-center text-center">
-        <img src="./assets/images/logo perusahaan/" alt="">
+        <img src="./assets/images/logo perusahaan/1.png" class="hidden-client" style="width: 37%;" alt="">
       </div>
     </div>
   </section>
@@ -292,21 +306,132 @@
   <section class="our-app-section" style="height: 70vh;">
     <div class="w-50 h-100 d-flex flex-row">
       <div class="content-our-app align-self-center align-items-center mx-auto">
-        <h1><strong>TRY OUR APPS</strong></h1>
-        <p>Membangun PT. SHA SOLO sebagai perusahan bahan bakar <br> minyak yang handal, terpercaya dan terdepan bagi
+        <h1 class="hidden-tryapp"><strong>TRY OUR APPS</strong></h1>
+        <p class="hidden-tryapp">Membangun PT. SHA SOLO sebagai perusahan bahan bakar <br> minyak yang handal,
+          terpercaya dan terdepan bagi
           seluruh
           mitra <br> usaha di Indonesia.</p>
-        <img src="./assets/images/image5513 1.png" style="width: 35%;margin-left: -10px;" alt="">
+        <img src="./assets/images/image5513 1.png" class="hidden-tryapp" style="width: 35%;margin-left: -10px;" alt="">
       </div>
     </div>
   </section>
   <!-- testimonial section -->
-  <section class="client-response" style="height: 100vh;">
+  <section class="client-response" style="height: 95vh;">
     <div class="heading-client text-center " style="position: relative;top: 100px;margin-bottom: 150px;">
       <h5 class="mb-3">TESTIMONIAL</h5>
       <h1 class="mb-5">Our Client's Response
         About Our Services</h1>
       <hr>
+    </div>
+    <div class="owl-carousel owl-theme" style="padding: 2.5% 8% 0 8% ">
+      <div class="item ">
+        <div class="card-testimonial d-flex mx-auto flex-column justify-content-center">
+          <div class="card-name w-75 d-flex mx-auto mb-5">
+            <div class="warper d-flex h-100">
+              <img src="https://placeimg.com/600/609/arch" alt="" width="64px" class="avatar-testimonial">
+              <div class="card-name-warp ml-4 justify-content-center d-flex flex-column">
+                <h5 class="testimonial-name font-weight-bold">
+                  SURYO TEGUH M
+                </h5>
+                <p class="jabatan">Director Marketing Of PT. Pertamina Indonesia</p>
+              </div>
+            </div>
+          </div>
+          <p class="testimonial-text mx-auto" style="width:80%">
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula lorem tellus gravida maecenas.”
+          </p>
+        </div>
+      </div>
+      <div class="item ">
+        <div class="card-testimonial d-flex mx-auto flex-column justify-content-center">
+          <div class="card-name w-75 d-flex mx-auto mb-5">
+            <div class="warper d-flex h-100">
+              <img src="https://placeimg.com/600/609/arch" alt="" width="64px" class="avatar-testimonial">
+              <div class="card-name-warp ml-4 justify-content-center d-flex flex-column">
+                <h5 class="testimonial-name font-weight-bold">
+                  SURYO TEGUH M
+                </h5>
+                <p class="jabatan">Director Marketing Of PT. Pertamina Indonesia</p>
+              </div>
+            </div>
+          </div>
+          <p class="testimonial-text mx-auto" style="width:80%">
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula lorem tellus gravida maecenas.”
+          </p>
+        </div>
+      </div>
+      <div class="item ">
+        <div class="card-testimonial d-flex mx-auto flex-column justify-content-center">
+          <div class="card-name w-75 d-flex mx-auto mb-5">
+            <div class="warper d-flex h-100">
+              <img src="https://placeimg.com/600/609/arch" alt="" width="64px" class="avatar-testimonial">
+              <div class="card-name-warp ml-4 justify-content-center d-flex flex-column">
+                <h5 class="testimonial-name font-weight-bold">
+                  SURYO TEGUH M
+                </h5>
+                <p class="jabatan">Director Marketing Of PT. Pertamina Indonesia</p>
+              </div>
+            </div>
+          </div>
+          <p class="testimonial-text mx-auto" style="width:80%">
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula lorem tellus gravida maecenas.”
+          </p>
+        </div>
+      </div>
+      <div class="item ">
+        <div class="card-testimonial d-flex mx-auto flex-column justify-content-center">
+          <div class="card-name w-75 d-flex mx-auto mb-5">
+            <div class="warper d-flex h-100">
+              <img src="https://placeimg.com/600/609/arch" alt="" width="64px" class="avatar-testimonial">
+              <div class="card-name-warp ml-4 justify-content-center d-flex flex-column">
+                <h5 class="testimonial-name font-weight-bold">
+                  SURYO TEGUH M
+                </h5>
+                <p class="jabatan">Director Marketing Of PT. Pertamina Indonesia</p>
+              </div>
+            </div>
+          </div>
+          <p class="testimonial-text mx-auto" style="width:80%">
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula lorem tellus gravida maecenas.”
+          </p>
+        </div>
+      </div>
+      <div class="item ">
+        <div class="card-testimonial d-flex mx-auto flex-column justify-content-center">
+          <div class="card-name w-75 d-flex mx-auto mb-5">
+            <div class="warper d-flex h-100">
+              <img src="https://placeimg.com/600/609/arch" alt="" width="64px" class="avatar-testimonial">
+              <div class="card-name-warp ml-4 justify-content-center d-flex flex-column">
+                <h5 class="testimonial-name font-weight-bold">
+                  SURYO TEGUH M
+                </h5>
+                <p class="jabatan">Director Marketing Of PT. Pertamina Indonesia</p>
+              </div>
+            </div>
+          </div>
+          <p class="testimonial-text mx-auto" style="width:80%">
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula lorem tellus gravida maecenas.”
+          </p>
+        </div>
+      </div>
+      <div class="item ">
+        <div class="card-testimonial d-flex mx-auto flex-column justify-content-center">
+          <div class="card-name w-75 d-flex mx-auto mb-5">
+            <div class="warper d-flex h-100">
+              <img src="https://placeimg.com/600/609/arch" alt="" width="64px" class="avatar-testimonial">
+              <div class="card-name-warp ml-4 justify-content-center d-flex flex-column">
+                <h5 class="testimonial-name font-weight-bold">
+                  SURYO TEGUH M
+                </h5>
+                <p class="jabatan">Director Marketing Of PT. Pertamina Indonesia</p>
+              </div>
+            </div>
+          </div>
+          <p class="testimonial-text mx-auto" style="width:80%">
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula lorem tellus gravida maecenas.”
+          </p>
+        </div>
+      </div>
     </div>
   </section>
   <section class="subscribe-us-section" style="height: 50vh;">
@@ -328,7 +453,7 @@
     <div class="row h-100 pt-5 mx-5 d-flex">
       <div class="col-4 col-sm-4 col-md-4 justify-content-center contact">
         <h2 class="mb-5">PT SHA SOLO</h2>
-        <ul>
+        <ul class="bottom-nav">
           <li><a href="">Home</a></li>
           <li><a href="">Our Service</a></li>
           <li><a href="">Gallery</a></li>
@@ -376,6 +501,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+  <script src="./assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+  <script src="./script/script.js"></script>
 </body>
 
 </html>
