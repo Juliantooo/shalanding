@@ -212,6 +212,7 @@ border: 1px solid white;
 }
 .our-app-section{
   background: linear-gradient(84.28deg, #FFFFFF 53.9%, rgba(1, 14, 26, 0) 109.69%), url('../assets/images/Rectangle\ 42.png');
+  background-size: cover;
 }
 .client-response{
   background: linear-gradient(0deg, rgba(232, 235, 239, 0.95), rgba(232, 235, 239, 0.95)), url('../assets/images/bg-comp-structure.jpg'), #E8EBEF;
